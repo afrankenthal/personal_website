@@ -1,5 +1,6 @@
 ---
-title: Publications
+title: Selected Publications
+subtitle: "(See all my publications here: [https://inspirehep.net/author/profile/A.Frankenthal.1)](https://inspirehep.net/author/profile/A.Frankenthal.1)"
 
 # View.
 #   1 = List
