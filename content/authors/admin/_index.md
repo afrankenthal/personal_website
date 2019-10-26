@@ -28,13 +28,13 @@ interests:
 
 education:
   courses:
-  - course: PhD in Physics
+  - course: Ph.D. in Physics
     institution: Cornell University
     year: 2020 (expected)
-  - course: MSc in Physics
+  - course: M.S. in Physics
     institution: Cornell University
     year: 2017
-  - course: BA in Physics
+  - course: B.A. in Physics
     institution: Reed College
     year: 2013
 
@@ -61,11 +61,14 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-2583-5982
+- icon: inspire
+  icon_pack: ai
+  link: https://inspirehep.net/author/profile/A.Frankenthal.1
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 - icon: cv
   icon_pack: ai
-  link: files/resume.pdf
+  link: "files/CV_AndreFrankenthal.pdf"
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "afrankenthal@gmail.com"
@@ -77,4 +80,4 @@ user_groups:
 - Visitors
 ---
 
-Andre Frankenthal is a PhD Candidate in experimental high-energy Physics at Cornell University. Originally from Rio de Janeiro, Brazil, he holds a BA from Reed College, in Portland, Oregon, and a MSc from Cornell. Andre works in two different experiments searching for dark matter using complementary strategies: with the larger [CMS Collaboration](https://cms.cern/collaboration) smashing protons together at the LHC, and with a smaller team at Laboratori Nazionali di Frascati, Italy, looking for dark photons ([PADME Collaboration](http://padme.lnf.infn.it/)). His work revolves around data analysis, detector data reconstruction, and upgrade studies for the next generation of high-energy physics detectors, in particular the CMS pixel detector. 
+I'm a PhD Candidate in experimental high-energy Physics at Cornell University. Originally from Rio de Janeiro, Brazil, I hold a B.A. from Reed College, in Portland, Oregon, and a M.S. from Cornell. I work in two different experiments searching for dark matter using complementary strategies: with the larger [CMS Collaboration](https://cms.cern/collaboration) smashing protons together at the LHC, and with a smaller team at Laboratori Nazionali di Frascati, Italy, looking for dark photons ([PADME Collaboration](http://padme.lnf.infn.it/)). My work revolves around data analysis, detector data reconstruction, and upgrade studies for the next generation of high-energy physics detectors, in particular the CMS pixel detector. 
