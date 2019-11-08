@@ -1,0 +1,37 @@
+Host gm2gpvm
+	HostName gm2gpvm01.fnal.gov
+	User as2872
+
+Host gm26221 lnx201 lnx231
+	HostName %h.classe.cornell.edu
+	User as2872
+
+Host tunnel231
+	Hostname lnx231.classe.cornell.edu
+	User as2872
+	LocalForward 5901 127.0.0.1:5901
+
+Host tunnelmq154
+	Hostname 192.168.214.154
+	User andre
+	LocalForward 5903 localhost:5903
+
+Host lxplus
+	Hostname lxplus.cern.ch
+	User asterenb
+
+Host g2gpvm gm26221 lnx201 lnx231 tunnel231 lxplus
+	GSSAPIDelegateCredentials yes
+	ForwardX11Trusted yes
+	GSSAPITrustDNS yes
+
+Host *
+	ForwardX11 yes
+	ForwardX11Trusted no
+	GSSAPIAuthentication yes 
+	GSSAPIDelegateCredentials no
+	GSSAPITrustDNS no
+	TCPKeepAlive no
+	ServerAliveInterval 60
+	ServerAliveCountMax 10
+	PreferredAuthentications gssapi-with-mic,gssapi,publickey,password
