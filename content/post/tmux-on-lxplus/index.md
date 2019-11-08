@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Tmux on lxplus"
+title: "Tmux on lxplus - second part"
 subtitle: ""
 summary: ""
 authors: []
@@ -28,7 +28,9 @@ image:
 projects: []
 ---
 
-Lxplus comes with native tmux installed. However, the native version is 1.8 which is very old. CERN has no plans to update its tmux version, but it is possible to install your own tmux locally (see here).
+(this is a sequel to ["Tmux on lxplus - first part"]({{< ref "/post/tmux-on-lxplus_pt0/index.md" >}}), please check it out first!)
+
+Lxplus comes with native tmux installed. However, the native version is 1.8 which is very old. CERN has no plans to update its tmux version, but it is possible to install your own tmux locally (see [here]({{< ref "/post/tmux-on-lxplus_pt0/index.md" >}})).
 
 When using my local tmux, I was running into a strange issue. I was able to create a new session and detach and reattach to it successfully while in the _same_ ssh session. But after logging out of lxplus and then back in, when trying to reattach to the tmux session, I got this error:
 
