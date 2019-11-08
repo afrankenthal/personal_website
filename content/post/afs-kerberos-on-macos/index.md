@@ -5,8 +5,8 @@ title: "AFS + Kerberos on MacOS"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: ["technical notes"]
+categories: ["technical notes"]
 date: 2019-11-08T00:05:50-05:00
 lastmod: 2019-11-08T00:05:50-05:00
 featured: false

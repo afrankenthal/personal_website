@@ -5,7 +5,7 @@ title: "Pyxrootd bindings on macOS"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: ["technical notes"]
 categories: ["technical notes"]
 date: 2019-10-19T23:21:01-04:00
 lastmod: 2019-10-19T23:21:01-04:00

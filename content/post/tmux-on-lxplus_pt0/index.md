@@ -5,7 +5,7 @@ title: "Tmux on lxplus - first part"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: ["technical notes"]
 categories: ["technical notes"]
 date: 2019-10-28T00:34:43-04:00
 lastmod: 2019-10-28T00:34:43-04:00
