@@ -5,8 +5,8 @@ title: "Lazy photons at the LHC"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
-categories: []
+tags: ["paper review"]
+categories: ["paper review"]
 date: 2019-11-24T23:30:55-05:00
 lastmod: 2019-11-24T23:30:55-05:00
 featured: false
