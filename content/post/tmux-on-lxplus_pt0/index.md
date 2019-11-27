@@ -7,8 +7,8 @@ summary: ""
 authors: []
 tags: ["technical notes"]
 categories: ["technical notes"]
-date: 2019-10-28T00:34:43-04:00
-lastmod: 2019-10-28T00:34:43-04:00
+date: 2017-07-06T00:34:43-04:00
+lastmod: 2017-07-16T00:34:43-04:00
 featured: false
 draft: false
 
