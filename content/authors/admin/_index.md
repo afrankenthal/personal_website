@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Associate Research Scholar / Dicke Fellow in Physics at Princeton University
+role: Associate Research Scholar / Dicke Fellow in Physics
 
 # Organizations/Affiliations
 organizations:
