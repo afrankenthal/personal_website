@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Tmux on lxplus - second part"
+title: "Tmux on lxplus - part II"
 subtitle: ""
 summary: ""
 authors: []
@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-(this is a sequel to ["Tmux on lxplus - first part"]({{< ref "/post/tmux-on-lxplus_pt0/index.md" >}}), please check it out first!)
+(this is a continuation of ["Tmux on lxplus - part I"]({{< ref "/post/tmux-on-lxplus_pt0/index.md" >}}), please check it out first!)
 
 Lxplus comes with native tmux installed. However, the native version is 1.8 which is very old. CERN has no plans to update its tmux version, but it is possible to install your own tmux locally (see [here]({{< ref "/post/tmux-on-lxplus_pt0/index.md" >}})).
 

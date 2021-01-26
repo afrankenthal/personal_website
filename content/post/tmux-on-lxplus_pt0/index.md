@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Tmux on lxplus - first part"
+title: "Tmux on lxplus - part I"
 subtitle: ""
 summary: ""
 authors: []
@@ -28,7 +28,7 @@ image:
 projects: []
 ---
 
-(This is actually a prequel to ["Tmux on lxplus"]({{< ref "/post/tmux-on-lxplus/index.md" >}}), despite being uploaded after it)
+(This is actually a prequel to ["Tmux on lxplus - part II"]({{< ref "/post/tmux-on-lxplus/index.md" >}}), despite being uploaded after it)
 
 The tmux version on CERN's lxplus is very old, 1.8. Since version 2.0 tmux has a host of neat new features, which makes it worth the pain of installing it locally. Here are the steps I took to get tmux 2.3 running on my lxplus setup.
 
@@ -62,7 +62,7 @@ After the make command you might get some errors related to building the man or 
         $ make install
         $ cd ..
 
-Here again you might get some errors while compiling, but they seem to be all related to the man command so you should be able to ignore them. The export CPPFLAGS line is to avoid another compilation error (see here: https://stackoverflow.com/questions/37475222/ncurses-6-0-compilation-error-error-expected-before-int). —enable-symlinks is also required to avoid yet another error (see here: http://lists.bestpractical.com/pipermail/shipwright/2010-June/000029.html).
+Here again you might get some errors while compiling, but they seem to be all related to the man command so you should be able to ignore them. The export CPPFLAGS line is to avoid another compilation error (see [here](https://stackoverflow.com/questions/37475222/ncurses-6-0-compilation-error-error-expected-before-int)). —enable-symlinks is also required to avoid yet another error (see [here](http://lists.bestpractical.com/pipermail/shipwright/2010-June/000029.html)).
 
 * Install tmux
 
