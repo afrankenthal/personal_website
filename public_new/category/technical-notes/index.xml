@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technical notes | Andre Frankenthal</title>
+    <link>https://frankenthal.dev/category/technical-notes/</link>
+      <atom:link href="https://frankenthal.dev/category/technical-notes/index.xml" rel="self" type="application/rss+xml" />
+    <description>technical notes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Jun 2019 23:21:01 -0400</lastBuildDate>
+    <image>
+      <url>https://frankenthal.dev/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>technical notes</title>
+      <link>https://frankenthal.dev/category/technical-notes/</link>
+    </image>
+    
+    <item>
+      <title>Pyxrootd bindings on macOS</title>
+      <link>https://frankenthal.dev/post/pyxrootd-bindings-in-macos/</link>
+      <pubDate>Mon, 17 Jun 2019 23:21:01 -0400</pubDate>
+      <guid>https://frankenthal.dev/post/pyxrootd-bindings-in-macos/</guid>
+      <description>&lt;p&gt;The homebrew version of xrootd doesn’t come with python bindings for some reason. The python bindings are needed for reading remote ROOT files with python/uproot (not needed for C++ ROOT).&lt;/p&gt;
+&lt;p&gt;Adapted from: &lt;a href=&#34;https://github.com/lgray/coffeandbacon/blob/master/setup_lcg.sh&#34;&gt;https://github.com/lgray/coffeandbacon/blob/master/setup_lcg.sh&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# issue with python3 bindings, see https://sft.its.cern.ch/jira/browse/SPI-1198
+wget https://github.com/xrootd/xrootd/archive/v4.8.3.tar.gz 
+tar zxf v4.8.3.tar.gz &amp;amp;&amp;amp; rm -f v4.8.3.tar.gz 
+cp xrd_setup.py xrootd-4.8.3/bindings/python/ 
+pushd xrootd-4.8.3/bindings/python/ 
+python xrd_setup.py install
+popd
+rm -rf xrootd-4.8.3 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Check whatever version of xrootd you have and substitute the numbers above. You can find the xrd_setup.py file here&lt;/p&gt;
+&lt;p&gt;(Or from: &lt;a href=&#34;https://github.com/lgray/coffeandbacon/blob/master/xrd_setup.py&#34;&gt;https://github.com/lgray/coffeandbacon/blob/master/xrd_setup.py&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;My pyxrootd ended up installed here:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/usr/local/lib/python3.7/site-packages/pyxrootd-4.8.3-py3.7-macosx-10.12-x86_64.egg/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To check open up python3 and try to import pyxroot.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tmux on lxplus - second part</title>
+      <link>https://frankenthal.dev/post/tmux-on-lxplus/</link>
+      <pubDate>Thu, 29 Nov 2018 23:14:25 -0400</pubDate>
+      <guid>https://frankenthal.dev/post/tmux-on-lxplus/</guid>
+      <description>&lt;p&gt;(this is a sequel to &lt;a href=&#34;https://frankenthal.dev/post/tmux-on-lxplus_pt0/&#34;&gt;&amp;ldquo;Tmux on lxplus - first part&amp;rdquo;&lt;/a&gt;, please check it out first!)&lt;/p&gt;
+&lt;p&gt;Lxplus comes with native tmux installed. However, the native version is 1.8 which is very old. CERN has no plans to update its tmux version, but it is possible to install your own tmux locally (see &lt;a href=&#34;https://frankenthal.dev/post/tmux-on-lxplus_pt0/&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;When using my local tmux, I was running into a strange issue. I was able to create a new session and detach and reattach to it successfully while in the &lt;em&gt;same&lt;/em&gt; ssh session. But after logging out of lxplus and then back in, when trying to reattach to the tmux session, I got this error:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;open terminal failed: missing or unsuitable terminal: xterm-256color&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After a year I have finally traced the problem to the root cause, with this very helpful reference:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.mail-archive.com/tmux-users@lists.sourceforge.net/msg01272.html&#34;&gt;https://www.mail-archive.com/tmux-users@lists.sourceforge.net/msg01272.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The issue is the &amp;lsquo;terminfo database entry can’t be found for “xterm”’. The solution is simple: just export in bash the terminfo location before starting the tmux session:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ export TERMINFO=/usr/share/terminfo
+$ cd ~/programs/tmux
+$ ./tmux new
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then after a new SSH session run the export command again and attach to the tmux session (actually, might not need the export command when reattaching):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ export TERMINFO=/usr/share/terminfo
+$ cd ~/programs/tmux
+$ ./tmux a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also just copy the export command to the .bashrc file.&lt;/p&gt;
+&lt;p&gt;More details about diagnostics: I think the problem might be that I accidentally used some native libraries to compile the local tmux (in /usr/lib/ and /usr/lib64) which was seen from running ‘ldd ./tmux’, though I’m not sure. Could also be that the ncurses version used was different than the local one I downloaded. Not really sure, but in any case exporting the TERMINFO info solves it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tmux on lxplus - first part</title>
+      <link>https://frankenthal.dev/post/tmux-on-lxplus_pt0/</link>
+      <pubDate>Thu, 06 Jul 2017 00:34:43 -0400</pubDate>
+      <guid>https://frankenthal.dev/post/tmux-on-lxplus_pt0/</guid>
+      <description>&lt;p&gt;(This is actually a prequel to &lt;a href=&#34;https://frankenthal.dev/post/tmux-on-lxplus/&#34;&gt;&amp;ldquo;Tmux on lxplus&amp;rdquo;&lt;/a&gt;, despite being uploaded after it)&lt;/p&gt;
+&lt;p&gt;The tmux version on CERN&amp;rsquo;s lxplus is very old, 1.8. Since version 2.0 tmux has a host of neat new features, which makes it worth the pain of installing it locally. Here are the steps I took to get tmux 2.3 running on my lxplus setup.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download everything (tmux requires libevent and ncurses)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ mkdir -p $HOME/tmux_tmp
+  $ mkdir -p $HOME/local
+  $ cd $HOME/tmux_tmp
+  $ wget https://github.com/tmux/tmux/archive/2.3.tar.gz
+  $ wget https://github.com/downloads/libevent/libevent/libevent-2.0.19-stable.tar.gz
+  $ wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install libevent&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ tar zxvf libevent-2.0.19-stable.tar.gz
+  $ cd libevent-2.0.19-stable
+  $ ./configure —-prefix=$HOME/local —-disable-shared
+  $ make
+  $ make install
+  $ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After the make command you might get some errors related to building the man or documentation, but you can ignore it and move on to make install.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install ncurses&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ tar zxvf ncurses-5.9.tar.gz
+  $ cd ncurses-5.9
+  $ export CPPFLAGS=“-P&amp;quot;
+  $ ./configure —-prefix=$HOME/local —-enable-symlinks
+  $ make
+  $ make install
+  $ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here again you might get some errors while compiling, but they seem to be all related to the man command so you should be able to ignore them. The export CPPFLAGS line is to avoid another compilation error (see here: &lt;a href=&#34;https://stackoverflow.com/questions/37475222/ncurses-6-0-compilation-error-error-expected-before-int)&#34;&gt;https://stackoverflow.com/questions/37475222/ncurses-6-0-compilation-error-error-expected-before-int)&lt;/a&gt;. —enable-symlinks is also required to avoid yet another error (see here: &lt;a href=&#34;http://lists.bestpractical.com/pipermail/shipwright/2010-June/000029.html)&#34;&gt;http://lists.bestpractical.com/pipermail/shipwright/2010-June/000029.html)&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install tmux&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ tar xzvf 2.3.tar.gz
+  $ cd tmux-2.3
+  $ ./autogen.sh
+  $ mkdir -p build; cd build
+  $ ../configure CFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; LDFLAGS=&amp;quot;-L$HOME/local/lib -L$HOME/local/include/ncurses -L$HOME/local/include&amp;quot; CPPFLAGS=&amp;quot;-I$HOME/local/include -I$HOME/local/include/ncurses&amp;quot; --prefix=$HOME/tmux_tmp/tmux-2.3
+  $ make
+  $ cp tmux $HOME/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clean up&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ rm -rf $HOME/tmux_tmp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add local bin to $PATH&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $ export PATH=$HOME/local/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(ideally add this line to ~/.bash_profile so it gets executed every time)&lt;/p&gt;
+&lt;p&gt;Done! Now just source the bash_profile again and run tmux!&lt;/p&gt;
+&lt;p&gt;Source: adapted from tmux_local_install.sh script at &lt;a href=&#34;https://gist.github.com/ryin/3106801&#34;&gt;https://gist.github.com/ryin/3106801&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(See lxplus version from &lt;a href=&#34;https://gist.github.com/pablodecm/151e90af9787e8340562&#34;&gt;https://gist.github.com/pablodecm/151e90af9787e8340562&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AFS &#43; Kerberos on MacOS</title>
+      <link>https://frankenthal.dev/post/afs-kerberos-on-macos/</link>
+      <pubDate>Fri, 23 Jun 2017 00:05:50 -0500</pubDate>
+      <guid>https://frankenthal.dev/post/afs-kerberos-on-macos/</guid>
+      <description>&lt;p&gt;CERN provides AFS access to its remote machines. When you log in via SSH you are directed to your own personal folder in the AFS filesystem. It turns out you can mount the remote AFS filesystem on your local machine and &amp;ldquo;skip&amp;rdquo; the SSH step, treating the folder as if it were local (SSHFS-style). Once you have &lt;a href=&#34;https://frankenthal.dev/post/ssh_kerberos_keytabs_macos/&#34;&gt;SSH + Kerberos + keytab files&lt;/a&gt; configured, you can use the steps below to install and use AFS on MacOS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Steps to install and use AFS on MacOS:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visit this website to download and install OpenAFS: &lt;a href=&#34;https://www.auristor.com/openafs/client-installer/&#34;&gt;https://www.auristor.com/openafs/client-installer/&lt;/a&gt;. OpenAFS will mount the AFS filesystem locally on the Mac.&lt;/li&gt;
+&lt;li&gt;The installation will ask for a default cell name. For CERN, this is cern.ch.&lt;/li&gt;
+&lt;li&gt;You should have a Kerberos configuration file (&lt;code&gt;krb5.conf&lt;/code&gt;) already updated from using SSH + Kerberos at CERN. It should have the right configuration to accept AFS tickets. If not follow &lt;a href=&#34;https://frankenthal.dev/post/ssh_kerberos_keytabs_macos/&#34;&gt;this post&lt;/a&gt; to get it done.&lt;/li&gt;
+&lt;li&gt;Make sure to include the option &lt;code&gt;—afslog&lt;/code&gt; in your &lt;code&gt;kinit&lt;/code&gt; command if you want to use AFS. After you obtain a Kerberos ticket, run the command &lt;code&gt;aklog&lt;/code&gt;, which should you grant you an AFS token. Type &lt;code&gt;tokens&lt;/code&gt; to check if this worked.&lt;/li&gt;
+&lt;li&gt;You should now have an AFS token. You should also have an AFS folder at &lt;code&gt;/afs/cern.ch/user/u/username&lt;/code&gt; that you can navigate as if it were a local folder.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more info on AFS at CERN, see &lt;a href=&#34;https://gist.github.com/OmeGak/9530124,&#34;&gt;https://gist.github.com/OmeGak/9530124,&lt;/a&gt; and &lt;a href=&#34;http://akorneev.web.cern.ch/akorneev/howto/openafs.txt&#34;&gt;http://akorneev.web.cern.ch/akorneev/howto/openafs.txt&lt;/a&gt;. For AFS on Macs, see &lt;a href=&#34;http://computing.help.inf.ed.ac.uk/afs-mac-os-x&#34;&gt;http://computing.help.inf.ed.ac.uk/afs-mac-os-x&lt;/a&gt; and &lt;a href=&#34;http://blog.encomiabile.it/2014/12/26/openafs-and-mac-os-x-yosemite/&#34;&gt;http://blog.encomiabile.it/2014/12/26/openafs-and-mac-os-x-yosemite/&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SSH &#43; Kerberos &#43; Keytabs on MacOS</title>
+      <link>https://frankenthal.dev/post/ssh_kerberos_keytabs_macos/</link>
+      <pubDate>Thu, 22 Jun 2017 00:05:49 -0500</pubDate>
+      <guid>https://frankenthal.dev/post/ssh_kerberos_keytabs_macos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Last updated: January 2021&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Kerberos is a convenient way to authenticate and obtain access to remote machines via SSH. Instead of typing your password every time you want to access a remote computer, you can type your password only once and obtain a Kerberos ticket, which serves as a ‘passport’ and saves typing effort during subsequent connections.&lt;/p&gt;
+&lt;p&gt;However, Kerberos tickets usually expire in 24 hours, so you still need to type (and therefore remember) your password at least once a day. Kerberos keytab files make the authentication process even more convenient. With keytabs, you type your password once, it gets encrypted according to the chosen encryption method, and then the encrypted password in the keytab file can be used to obtain a Kerberos ticket, which will subsequently grant access to the remote machine. Never type your password again!&lt;/p&gt;
+&lt;p&gt;But be careful to make the keytab file readable only by you, the owner, as anyone with a read access to a keytab file will automatically have access to the remote machine as well (though they still won’t know your password, since it’s encrypted).&lt;/p&gt;
+&lt;p&gt;To get SSH with Kerberos + keytabs working, it’s a long and harrowing road… But let’s start with the first step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Get SSH + Kerberos + Keytabs working:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Updated January 2021&lt;/strong&gt; 1. There is a better way to obtain an SSH binary with GSSAPITrustDNS support than outlined below. Using &lt;a href=&#34;https://brew.sh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew&lt;/a&gt;, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-brew&#34;&gt;
+(from https://github.com/rdp/homebrew-openssh-gssapi)
+
+1. **See above** Obtain correct SSH binary. If you have MacOS Sierra, it comes with an updated version of OpenSSH that drops some options that support Kerberos authentication (the most important being `GSSAPITrustDNS`). What&#39;s necessary here is to find an SSH binary from El Capitan and then copy it to your `/usr/local/bin` folder, and make sure that the `$PATH` variable points first to that folder, before pointing to `/usr/bin` (where the native SSH binary lives), so that it will be picked up first by the system.
+
+2. Adjust Kerberos configuration. This is a complicated process but you can just copy the right `krb5.conf` to your system, placing it in `/etc/krb5.conf`. Here is mine: 
+
+3. Enable Kerberos authentication in SSH config. For each remote network you want to connect to (e.g. Fermilab, CLASSE, CERN), edit the file `~/.ssh/config` to be similar to this one: It’s important to have the `GSSAPI\*` options and the `PreferredAuthentications` option like in the file, to allow Kerberos authentication.
+
+4. Make a keytab file with your encrypted password. This step is to create a keytab file containing your password that will be fed to the kinit command in order to obtain a Kerberos ticket. On MacOS X (which comes with the Heimdal flavor of Kerberos, and not MIT’s) the command to add a password for CERN’s account is:
+    
+    ```
+    $ ktutil -k ~/keytab add -p user@CERN.CH -e arcfour-hmac-md5 -V 3
+    ```
+    
+    MacOS will complain about the chosen encryption but it’s the only one that kinit supports for automation of CERN’s network connection (as far as I know). Other encryptions also contain a “salt” that `ktutil` doesn’t handle well (see https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=698534 and https://serverfault.com/questions/620521/kerberos-ktutil-what-kinds-of-encryption-are-available). The equivalent command for a CLASSE entry would be: 
+
+    ```
+    $ ktutil -kt ~/keytab add -p user@CLASSE.CORNELL.EDU -e aes256-cts-hmac-sha1-96 -V 1
+    ```
+
+    You can also make your keytab file when logged in to one of the remote machines. For example, if you are on a lxplus machine, you can create a keytab file with a different version of the Kerberos tools (MIT’s one): 
+
+    ```
+    $ ktutil 
+    addent -password -p user@CERN.CH -k 3 -e arcfour-hmac-md5
+    (type your password)
+    wkt keytab
+    quit
+    ```
+
+    (for more info see here https://kb.iu.edu/d/aumh). Now the keytab file in your home directory contains your encrypted passwords for access to CERN’s and CLASSE’s networks.
+5. Use the keytab file to authenticate to `kinit`. The command `$ kinit —afslog -kt ~/keytab user@CERN.CH` or `$ kinit -ky ~/keytab user@CLASSE.CORNELL.EDU` should now grant you Kerberos tickets without having to type your password. Note that you could include this command in (start-up) scripts, so that you always have a connection on. Neat!
+6. SSH to remote machine as usual. For example, `ssh user@lxplus.cern.ch` or `ssh user@lnx201.classe.cornell.edu`. Again your password shouldn’t be asked anymore.
+7. Remember to set the permissions of the keytab file to read-only by you! Anyone with read access to this file could log in to your accounts, so make sure it can only be readable by you.
+
+More (partial) info: http://linux.web.cern.ch/linux/docs/kerberos-access.shtml
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

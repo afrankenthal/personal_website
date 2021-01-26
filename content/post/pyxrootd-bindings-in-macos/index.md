@@ -41,7 +41,7 @@ Adapted from: https://github.com/lgray/coffeandbacon/blob/master/setup_lcg.sh
     popd
     rm -rf xrootd-4.8.3 
 
-Check whatever version of xrootd you have and substitute the numbers above. You can find the xrd_setup.py file {{% staticref "files/xrd_setup.py" %}}here{{% /staticref %}}.
+Check whatever version of xrootd you have and substitute the numbers above. You can find the xrd_setup.py file here
 
 (Or from: https://github.com/lgray/coffeandbacon/blob/master/xrd_setup.py)
 

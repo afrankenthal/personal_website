@@ -8,7 +8,8 @@ authors: []
 tags: ["technical notes"]
 categories: ["technical notes"]
 date: 2017-06-22T00:05:49-05:00
-lastmod: 2017-06-24T00:05:49-05:00
+# date: 2021-01-25T00:05:49-05:00
+lastmod: 2021-01-25T00:05:49-05:00
 featured: false
 draft: false
 
@@ -27,7 +28,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
     
 Kerberos is a convenient way to authenticate and obtain access to remote machines via SSH. Instead of typing your password every time you want to access a remote computer, you can type your password only once and obtain a Kerberos ticket, which serves as a ‘passport’ and saves typing effort during subsequent connections.
 
@@ -39,11 +39,18 @@ To get SSH with Kerberos + keytabs working, it’s a long and harrowing road… 
 
 **Get SSH + Kerberos + Keytabs working:**
 
-1. Obtain correct SSH binary. If you have MacOS Sierra, it comes with an updated version of OpenSSH that drops some options that support Kerberos authentication (the most important being `GSSAPITrustDNS`). What's necessary here is to find an SSH binary from El Capitan and then copy it to your `/usr/local/bin` folder, and make sure that the `$PATH` variable points first to that folder, before pointing to `/usr/bin` (where the native SSH binary lives), so that it will be picked up first by the system.
+1. **(Updated January 2021)**  Obtain correct SSH binary. If you have MacOS Sierra or later, it comes with an updated version of OpenSSH that drops some options that support Kerberos authentication (the most important being `GSSAPITrustDNS`). The best way to obtain an SSH binary with GSSAPITrustDNS support is using [Homebrew](https://brew.sh). After installed, run:
 
-2. Adjust Kerberos configuration. This is a complicated process but you can just copy the right `krb5.conf` to your system, placing it in `/etc/krb5.conf`. Here is mine: {{% staticref "files/krb5.conf" %}}krb5.conf{{% /staticref %}}.
+   ```bash
+   $ brew install rdp/homebrew-openssh-gssapi/openssh-patched --with-gssapi-support
+   ```
+   (from https://github.com/rdp/homebrew-openssh-gssapi)
 
-3. Enable Kerberos authentication in SSH config. For each remote network you want to connect to (e.g. Fermilab, CLASSE, CERN), edit the file `~/.ssh/config` to be similar to this one: {{% staticref "files/config" %}}config{{% /staticref %}}. It’s important to have the `GSSAPI\*` options and the `PreferredAuthentications` option like in the file, to allow Kerberos authentication.
+   **(Deprecated)** ~~What's necessary here is to find an SSH binary from El Capitan and then copy it to your `/usr/local/bin` folder, and make sure that the `$PATH` variable points first to that folder, before pointing to `/usr/bin` (where the native SSH binary lives), so that it will be picked up first by the system.~~
+
+2. Adjust Kerberos configuration. This is a complicated process but you can just copy the right `krb5.conf` to your system, placing it in `/etc/krb5.conf`. Here is mine: 
+
+3. Enable Kerberos authentication in SSH config. For each remote network you want to connect to (e.g. Fermilab, CLASSE, CERN), edit the file `~/.ssh/config` to be similar to this one: It’s important to have the `GSSAPI\*` options and the `PreferredAuthentications` option like in the file, to allow Kerberos authentication.
 
 4. Make a keytab file with your encrypted password. This step is to create a keytab file containing your password that will be fed to the kinit command in order to obtain a Kerberos ticket. On MacOS X (which comes with the Heimdal flavor of Kerberos, and not MIT’s) the command to add a password for CERN’s account is:
     

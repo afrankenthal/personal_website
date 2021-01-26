@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>paper review | Andre Frankenthal</title>
+    <link>https://frankenthal.dev/category/paper-review/</link>
+      <atom:link href="https://frankenthal.dev/category/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <description>paper review</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Nov 2019 23:30:55 -0500</lastBuildDate>
+    <image>
+      <url>https://frankenthal.dev/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>paper review</title>
+      <link>https://frankenthal.dev/category/paper-review/</link>
+    </image>
+    
+    <item>
+      <title>Lazy photons at the LHC</title>
+      <link>https://frankenthal.dev/post/lazy_photons_lhc/</link>
+      <pubDate>Sun, 24 Nov 2019 23:30:55 -0500</pubDate>
+      <guid>https://frankenthal.dev/post/lazy_photons_lhc/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Title: &lt;em&gt;“Search for long-lived particles using delayed photons in proton-proton collisions at $\sqrt{s}$ = 13 TeV”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Author: CMS Collaboration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference: &lt;a href=&#34;https://arxiv.org/abs/1909.06166&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/abs/1909.06166&lt;/a&gt;&lt;/strong&gt; (submitted to Phys. Rev. D)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Originally published on &lt;a href=&#34;https://particlebites.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Particle Bites&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An interesting group of searches for new physics at the LHC that has been gaining more attention in recent years relies on reconstructing and identifying physics objects that are displaced from the original proton-proton collision point. Several theoretical models predict such signatures due to the decay of &lt;strong&gt;long-lived particles (LLPs)&lt;/strong&gt; that are produced in these collisions. Theories with LLPs typically feature a suppression of the available phase space for the decay of these particles, or a weak coupling between them and Standard Model (SM) particles.&lt;/p&gt;
+&lt;p&gt;An appealing feature of these signatures is that backgrounds can be greatly reduced by searching for displaced objects, since most SM physics display only prompt particles (i.e. produced immediately following the collision within the primary vertex resolution). Given that the sensitivity to new physics is determined both by the presence of signal events as well as by the absence of background events, the sensitivity to models with LLPs is increased with the expectation of low SM backgrounds.&lt;/p&gt;
+&lt;p&gt;A recent search for new physics with LLPs performed by the CMS Collaboration uses &lt;strong&gt;delayed photons&lt;/strong&gt; as its driving experimental signature. For this search, events of interest contain delayed photons and missing transverse momentum (MET$^1$). This signature is predicted in the LHC by various theories such as Gauge-Mediated Supersymmetry Breaking (GMSB), where long-lived supersymmetric particles produced in proton-proton (pp) collisions decay in a peculiar pattern, giving rise to stable particles that escape the detector (hence the MET) and also photons that are displaced from the interaction point. The expected signature is shown in Figure 1.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-figure-1-example-feynman-diagrams-of-gauge-mediated-supersymmetry-breaking-gmsb-processes-that-can-give-rise-to-final-state-signatures-at-cms-consisting-of-two-left-or-one-right-displaced-photons-and-supersymmetric-particles-that-escape-the-detector-and-show-up-as-missing-transverse-momentum-met&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/lazy_photons_lhc/diagrams_hubb3e307997cdec075ccc12f9f4c80754_55140_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Figure 1. Example Feynman diagrams of Gauge-Mediated Supersymmetry Breaking (GMSB) processes that can give rise to final-state signatures at CMS consisting of two (left) or one (right) displaced photons and supersymmetric particles that escape the detector and show up as missing transverse momentum (MET).&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/lazy_photons_lhc/diagrams_hubb3e307997cdec075ccc12f9f4c80754_55140_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;999&#34; height=&#34;344&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Figure 1. Example Feynman diagrams of Gauge-Mediated Supersymmetry Breaking (GMSB) processes that can give rise to final-state signatures at CMS consisting of two (left) or one (right) displaced photons and supersymmetric particles that escape the detector and show up as missing transverse momentum (MET).
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The main challenge of this analysis is the physics reconstruction of delayed photons, something that the LHC experiments were not originally designed to do. Both the detector and the physics software are optimized for prompt objects originating from the pp interaction point, where the vast majority of relevant physics happens at the LHC. This difference is illustrated in Figure 2.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-figure-2-difference-between-prompt-and-displaced-photons-as-seen-at-cms-with-the-electromagnetic-calorimeter-ecal-the-ecal-crystals-are-oriented-towards-the-interaction-point-and-so-for-displaced-photons-both-the-shape-of-the-electromagnetic-shower-generated-inside-the-crystals-and-the-arrival-time-of-the-photons-are-different-from-prompt-photons-produced-at-the-proton-proton-collision-source-httpscmscernnewsits-never-too-late-photons-cms&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/lazy_photons_lhc/displaced_reco_hubb3e307997cdec075ccc12f9f4c80754_72426_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Figure 2. Difference between prompt and displaced photons as seen at CMS with the electromagnetic calorimeter (ECAL). The ECAL crystals are oriented towards the interaction point and so for displaced photons both the shape of the electromagnetic shower generated inside the crystals and the arrival time of the photons are different from prompt photons produced at the proton-proton collision. Source: &amp;lt;a href=&amp;#34;https://cms.cern/news/its-never-too-late-photons-cms&amp;#34;&amp;gt;https://cms.cern/news/its-never-too-late-photons-cms&amp;lt;/a&amp;gt;&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/lazy_photons_lhc/displaced_reco_hubb3e307997cdec075ccc12f9f4c80754_72426_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;716&#34; height=&#34;533&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Figure 2. Difference between prompt and displaced photons as seen at CMS with the electromagnetic calorimeter (ECAL). The ECAL crystals are oriented towards the interaction point and so for displaced photons both the shape of the electromagnetic shower generated inside the crystals and the arrival time of the photons are different from prompt photons produced at the proton-proton collision. Source: &lt;a href=&#34;https://cms.cern/news/its-never-too-late-photons-cms&#34;&gt;https://cms.cern/news/its-never-too-late-photons-cms&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In order to reconstruct delayed photons, a separate reconstruction algorithm was developed that specifically looked for signs of photons out-of-sync with the pp collision. Before this development, out-of-time photons in the detector were considered something of an ‘incomplete or misleading reconstruction’ and discarded from the analysis workflow.&lt;/p&gt;
+&lt;p&gt;In order to use delayed photons in analysis, a precise understanding of CMS’s calorimeter timing capabilities is required. The collaboration measured the timing resolution of the electromagnetic calorimeter to be around 400 ps, and that sets the detector’s sensitivity to delayed photons.&lt;/p&gt;
+&lt;p&gt;Other relevant components of this analysis include a dedicated trigger (for 2017 data), developed to select events consistent with a single displaced photon. The identification of a displaced photon at the trigger level relies on the shape of the electromagnetic shower it deposits on the calorimeter: displaced photons produce a more elliptical shower, whereas prompt photons produce a more circular one. In addition, an auxiliary trigger (used for 2016 data, before the special trigger was developed) requires two photons, but no displacement.&lt;/p&gt;
+&lt;p&gt;The event selection requires one or two well-reconstructed high-momentum photons in the detector (depending on year), and at least 3 jets. The two main kinematic features of the event, the large arrival time (i.e. consistent with time of production delayed relative to the pp collision) and large MET, are used instead to extract the signal and the background yields (see below).&lt;/p&gt;
+&lt;p&gt;In general for LLP searches, it is difficult to estimate the expected background from Monte Carlo (MC) simulation alone, since a large fraction of backgrounds are due to detector inefficiencies and/or physics events that have poor MC modeling. Instead, this analysis estimates the background from the data itself, by using the so-called ‘ABCD’ method.&lt;/p&gt;
+&lt;p&gt;The ABCD method consists of placing events in data that pass the signal selection on a 2D histogram, with a suitable choice of two kinematic quantities as the X and Y variables. These two variables must be uncorrelated, a very important assumption. Then this histogram is divided into 4 regions or ‘bins’, and the one with the highest fraction of expected signal events becomes the ‘signal’ bin (call it the ‘C’ bin). The other three bins should contain mostly background events, and with the assumption that X and Y variables are uncorrelated, it is possible to predict the background in C by using the observed backgrounds in A, B, and D:&lt;/p&gt;
+&lt;p&gt;$$C_{\textrm{pred}} = \frac{B_{\textrm{obs}} \times D_{\textrm{obs}}}{A_{\textrm{obs}}}$$&lt;/p&gt;
+&lt;p&gt;Using this data-driven background prediction for the C bin, all that remains is to compare the actual observed yield in C to figure out if there is an excess, which could be attributed to the new physics under investigation:&lt;/p&gt;
+&lt;p&gt;$$\textrm{excess} = C_{\textrm{obs}} - C_{\textrm{pred}}$$&lt;/p&gt;
+&lt;p&gt;As an example, Table 1 shows the number of background events predicted and the number of events in data observed for the 2016 run.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-table-1-observed-yield-in-data-n_textrmobstextrmdata-and-predicted-background-yields-n_textbkgno-ctextrmpost-fit-and-n_textrmbkgtextrmpost-fit-in-the-lhc-2016-run-for-all-four-bins-c-is-the-signal-enriched-bin-the-observed-data-is-entirely-compatible-with-the-predicted-background-and-no-excess-is-seen&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/lazy_photons_lhc/yields_hubb3e307997cdec075ccc12f9f4c80754_58275_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Table 1. Observed yield in data ($N_{\textrm{obs}}^{\textrm{data}}$) and predicted background yields ($N_{\text{bkg(no C)}}^{\textrm{post-fit}}$ and $N_{\textrm{bkg}}^{\textrm{post-fit}}$) in the LHC 2016 run, for all four bins (C is the signal-enriched bin). The observed data is entirely compatible with the predicted background, and no excess is seen.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/lazy_photons_lhc/yields_hubb3e307997cdec075ccc12f9f4c80754_58275_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;779&#34; height=&#34;197&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Table 1. Observed yield in data ($N_{\textrm{obs}}^{\textrm{data}}$) and predicted background yields ($N_{\text{bkg(no C)}}^{\textrm{post-fit}}$ and $N_{\textrm{bkg}}^{\textrm{post-fit}}$) in the LHC 2016 run, for all four bins (C is the signal-enriched bin). The observed data is entirely compatible with the predicted background, and no excess is seen.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Combining all the data, the CMS Collaboration did not find an excess of events over the expected background, which would have suggested evidence of new physics. Using statistical analysis, the collaboration can place upper limits on the possible mass and lifetime of new supersymmetric particles predicted by GMSB, based on the absence of excess events. The final result of this analysis is shown in Figure 3, where a mass of up to 500 GeV for the neutralino particle is excluded for lifetimes of 1 meter (here we measure lifetime in units of length by multiplying by the speed of light: $c\tau$ = 1 meter).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-figure-3-exclusion-plots-for-the-gmsb-model-featuring-exclusion-contours-of-masses-and-lifetimes-for-the-lightest-supersymmetric-particle-the-neutralino-at-its-most-sensitive-mass-region-around-lifetimes-of-1-meter-the-cms-result-excludes-a-mass-of-under-500-gev-for-the-neutralino-while-for-lower-masses-100-200-gev-the-lifetime-exclusion-is-quite-high-at-around-100-meters-or-so&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/lazy_photons_lhc/exclusion_hubb3e307997cdec075ccc12f9f4c80754_92865_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Figure 3. Exclusion plots for the GMSB model, featuring exclusion contours of masses and lifetimes for the lightest supersymmetric particle (the neutralino). At its most sensitive mass region (around lifetimes of 1 meter) the CMS result excludes a mass of under 500 GeV for the neutralino, while for lower masses (100-200 GeV) the lifetime exclusion is quite high at around 100 meters or so.&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/lazy_photons_lhc/exclusion_hubb3e307997cdec075ccc12f9f4c80754_92865_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;551&#34; height=&#34;538&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Figure 3. Exclusion plots for the GMSB model, featuring exclusion contours of masses and lifetimes for the lightest supersymmetric particle (the neutralino). At its most sensitive mass region (around lifetimes of 1 meter) the CMS result excludes a mass of under 500 GeV for the neutralino, while for lower masses (100-200 GeV) the lifetime exclusion is quite high at around 100 meters or so.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The mass coverage of this search is higher than the previous search done by the ATLAS Collaboration with run 1 data (i.e. years 2010-2012 only), with a much higher sensitivity to longer lifetimes (up to a factor of 10 depending on the mass). But the ATLAS detector has a longitudinally-segmented calorimeter which allows them to precisely measure the direction of displaced photons, and when they do release their results for this search using run 2 data (2016-2018), it should also feature quite a large gain in sensitivity, potentially overshadowing this CMS result. So stay tuned for this exciting cat-and-mouse game between LHC experiments!&lt;/p&gt;
+&lt;h3 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CMS&amp;rsquo;s press release: &lt;a href=&#34;https://cms.cern/news/its-never-too-late-photons-cms&#34;&gt;https://cms.cern/news/its-never-too-late-photons-cms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CERN article about LLPs: &lt;a href=&#34;https://home.cern/news/news/experiments/long-lived-physics&#34;&gt;https://home.cern/news/news/experiments/long-lived-physics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Symmetry magazine article about LLPs: &lt;a href=&#34;https://www.symmetrymagazine.org/article/the-secret-lives-of-long-lived-particles&#34;&gt;https://www.symmetrymagazine.org/article/the-secret-lives-of-long-lived-particles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h3&gt;
+&lt;p&gt;1: Here we use the notation MET instead of $P_T^{\textrm{miss}}$ when referring to missing transverse momentum for typesetting reasons.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When light and light collide</title>
+      <link>https://frankenthal.dev/post/light-by-light/</link>
+      <pubDate>Tue, 27 Aug 2019 23:21:30 -0500</pubDate>
+      <guid>https://frankenthal.dev/post/light-by-light/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Title: &lt;em&gt;“Evidence for light-by-light scattering in heavy-ion collisions with the ATLAS detector at the LHC”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Author: ATLAS Collaboration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference: &lt;a href=&#34;https://www.nature.com/nphys/journal/v13/n9/full/nphys4208.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;doi:10.1038/nphys4208&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Originally published on &lt;a href=&#34;https://particlebites.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Particle Bites&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;According to classical wave theory, two electromagnetic waves that happen to cross each other in space will not interfere. In fact, this is a crucial feature of the conventional definition of a wave, in contrast to a corpuscle or particle: when two waves meet, they briefly occupy the same space at the same time, each without “knowing” about the other’s existence. Particles, on the other hand, do interact (or scatter) when they get close to each other, and the results of this encounter can be measured.&lt;/p&gt;
+&lt;p&gt;The mathematical backbone for this idea is the so-called &lt;strong&gt;superposition principle&lt;/strong&gt;. It arises from the fact that the equations describing wave propagation are all linear in the fields and sources, meaning that they don’t occur in squares or cubes of those quantities. When we take two such waves that happen to be nearby, the linearity of the equations implies that we can treat the overall wave as just a linear superposition of two separate waves, traveling in different directions. The equations do not distinguish between the two scenarios.&lt;/p&gt;
+&lt;p&gt;This story gets more interesting after the insights by Albert Einstein who predicted the quantization of light, and the subsequent formal development of Quantum Electrodynamics in the 1940s by Shin&amp;rsquo;ichirō Tomonaga, Julian Schwinger and Richard Feynman. In the quantum theory of light, it is no longer “just” a wave, but rather a dual entity that can be treated as both a wave and as a particle called photon.&lt;/p&gt;
+&lt;p&gt;The new interpretation of light as a particle opens up the possibility that two electromagnetic waves may indeed interact when crossing each other, just as particles would. The mathematical equivalent statement is that the quantum theory of light yields wave equations that are not entirely linear anymore, but instead contain a small non-linear part. The non-linear contributions have to be tiny, otherwise we would already have detected the effects, but nonetheless they are predicted to occur by quantum theory. In this context, it is called &lt;strong&gt;light-by-light scattering&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;detection&#34;&gt;Detection&lt;/h2&gt;
+&lt;p&gt;In 2017, The ATLAS experiment at the LHC observed the first direct evidence of light-by-light scattering, using collisions of relativistic heavy-ions. Since this is such a rare phenomenon, it took us a long time to become directly experimentally sensitive to it.&lt;/p&gt;
+&lt;p&gt;The experiment is based on so-called Ultra-Peripheral Collisions (UPC) of lead ions (Z=82) at a center-of-mass energy of 5.02 TeV (or 5,000 times the mass of the proton). In UPC collisions, the two oncoming beams are far enough apart that the beam particles are less likely to undergo hard scattering, and instead just “graze” each other. This means that the strong force is not usually involved in such interactions, since its range is tiny and it only has intra-nuclear coverage. Instead, the electromagnetic interaction dominates in UPC events.&lt;/p&gt;
+&lt;p&gt;The figure below shows how UPCs proceed. The grazing of two lead ions leads to large electromagnetic fields in the space between the ions, and this interaction can be interpreted as an exchange of photons between them, since photons are the mediator of electromagnetism. Then, by also looking for two final-state photons in the ATLAS detector (the ‘X’ on the right in the figure), the light-by-light process, $\gamma \gamma \rightarrow \gamma \gamma$, can be probed ($\gamma$ stands for photons).&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-left-feynman-diagrams-of-light-by-light-scattering-two-incoming-photons-interact-and-two-outgoing-photons-are-produced-right-how-to-measure-light-by-light-scattering-using-ultra-peripheral-collisions-upc-with-lead-ions-in-the-lhc-source-httpsdoiorg101038nphys4208&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/light-by-light/nphys4208-f1_hu66748c39fd71a908fe8e071f162021a9_19042_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Left: Feynman diagrams of light-by-light scattering. Two incoming photons interact and two outgoing photons are produced. Right: how to measure light-by-light scattering using Ultra-Peripheral Collisions (UPC) with lead ions in the LHC. Source: &amp;lt;a href=&amp;#34;https://doi.org/10.1038/nphys4208&amp;#34;&amp;gt;https://doi.org/10.1038/nphys4208&amp;lt;/a&amp;gt;&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/light-by-light/nphys4208-f1_hu66748c39fd71a908fe8e071f162021a9_19042_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;946&#34; height=&#34;271&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Left: Feynman diagrams of light-by-light scattering. Two incoming photons interact and two outgoing photons are produced. Right: how to measure light-by-light scattering using Ultra-Peripheral Collisions (UPC) with lead ions in the LHC. Source: &lt;a href=&#34;https://doi.org/10.1038/nphys4208&#34;&gt;https://doi.org/10.1038/nphys4208&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In order to isolate this particular process from all the other physics happening at the LHC, a series of increasingly tighter selections (or cuts) is applied to the acquired data. The final cuts are optimized to obtain the maximum possible sensitivity to the light-by-light scattering process. This sensitivity depends on how likely it is to select a candidate signal event, and similarly on how unlikely it is to select a background event. The main background physics that could mimic the signature of light-by-light scattering (two photons in the ATLAS calorimeter on an UPC lead-ion data run) include $\gamma \gamma \rightarrow e^+ e^-$, where the final-state electrons and positrons are misidentified by the detector as photons; central exclusive production (CEP) of photons in $g g \rightarrow \gamma \gamma$ (where $g$ is a gluon); and hadronic fakes from $\pi_0$ production in low-pT dijet events, where $\pi_0$’s (neutral pions) decay to a pair of photons.&lt;/p&gt;
+&lt;p&gt;The various applied selections begin with a dedicated trigger which selects events with moderate activity in the calorimeter and very little activity elsewhere. This is what is expected in a lead-ion UPC collision, since the ions just escape down the LHC beam pipe and are not detected, leaving the two photons as the only visible products. Then a set of selections is applied to ensure that the recorded activity in the calorimeter is compatible with two photons. These selections rely mostly on the shape of electromagnetic showers deposited on calorimeter crystals, which varies for different types of incident particles.&lt;/p&gt;
+&lt;p&gt;Finally, a series of extra selections is applied to minimize the number of possible background events, such as vetoing any events containing charged-particle tracks in the ATLAS tracker, which effectively removes $\gamma \gamma \rightarrow  e^+ e^-$ events with electrons and positrons mis-tagged as photons. Note that this also removes some of the real light-by-light signal events (about ~10%), where final-state photons undergo photon conversion after interacting with tracker material, but in this case the trade-off is certainly worth it. Another such selection is the requirement that the transverse momentum of the diphoton system be less than 2 GeV. This removes contributions from other fake-photon backgrounds (such as cosmic-ray muons), because it ensures that the net transverse momentum of the system is small, and thus likely to originate in the ion-ion interaction.&lt;/p&gt;
+&lt;p&gt;The same exact set of selections is applied to both data and Monte Carlo (MC) simulations of the experiment. The MC simulations yield an estimate of how many background and signal events should be expected in data. The table below shows the results.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-selection-cuts-and-number-of-events-left-after-each-cut-applied-to-both-data-and-mc-samples-including-backgrounds-and-signal-sourcehttpsdoiorg101038nphys4208&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/light-by-light/event_selection_huc4b0bd58a20fdf88e2d9d51c435bc209_41065_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Selection cuts and number of events left after each cut, applied to both data and MC samples, including backgrounds and signal. Source: https://doi.org/10.1038/nphys4208&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/light-by-light/event_selection_huc4b0bd58a20fdf88e2d9d51c435bc209_41065_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;967&#34; height=&#34;225&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Selection cuts and number of events left after each cut, applied to both data and MC samples, including backgrounds and signal. Source: https://doi.org/10.1038/nphys4208
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The penultimate row contains the sum of all cuts and a comparison between total number of expected background events (2.6), light-by-light scattering events (7.3), and data (13). The sum of 2.6+7.3=9.9 events certainly seems compatible with the observed data, given the quoted uncertainties in the last row. In fact, it is possible to estimate the significance of this result by asking how likely it would be for the background-only hypothesis (that is, pretending light-by-light scattering doesn’t exist and only including the backgrounds) to yield 13 observed events. This likelihood is tiny, $5\times10^{-6}$, which corresponds to a significance of 4.4 sigma!&lt;/p&gt;
+&lt;p&gt;In addition to the number of events, in the figure below the paper also plots the diphoton invariant mass distribution for the 13 observed data events (black points), and for the MC simulations (signal in red and backgrounds in blue and gray). This comparison provides further evidence that we do indeed see light-by-light scattering in the ATLAS data.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-left-distribution-of-diphoton-acoplanarity-right-distribution-of-diphoton-invariant-mass-with-final-selection-cuts-both-on-data-and-mc-backgrounds-and-signal-sourcehttpsdoiorg101038nphys4208&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://frankenthal.dev/post/light-by-light/nphys4208-f3_hu0dd6636ec22a36d3d72cfc80d05263bf_46137_2000x2000_fit_q90_lanczos.jpg&#34; data-caption=&#34;Left: distribution of diphoton acoplanarity. Right: distribution of diphoton invariant mass with final selection cuts, both on data and MC backgrounds and signal. Source: https://doi.org/10.1038/nphys4208&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://frankenthal.dev/post/light-by-light/nphys4208-f3_hu0dd6636ec22a36d3d72cfc80d05263bf_46137_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;946&#34; height=&#34;416&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+    Left: distribution of diphoton acoplanarity. Right: distribution of diphoton invariant mass with final selection cuts, both on data and MC backgrounds and signal. Source: https://doi.org/10.1038/nphys4208
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Finally, given the observed number of events in data and the expected number of MC background events, it is possible to measure the cross-section of light-by-light scattering (as a reminder, the cross-section of a process measures how likely it is to occur in collisions). The ATLAS collaboration calculates the cross-section of light-by-light scattering with the formula:&lt;/p&gt;
+&lt;p&gt;$$\sigma_{\text{fid}} = \frac{N_{\text{data}} - N_{\text{bkg}}}{C \times \int L dt}$$&lt;/p&gt;
+&lt;p&gt;where $N_{\text{data}}$ is the number of observed events in data, $N_{\text{bkg}}$ is the number of background events in MC, $\int L dt$ is the total amount of data collected, and $C$ is a correction factor which translates all of the detector inefficiencies into a single number. You can think of the entire denominator as the “effective” amount of data that was analyzed, and the numerator as the “effective” number of signal events that was seen. The ratio of the two quantities yields the probability of seeing light-by-light scattering in a single collision. The ATLAS collaboration found this value to be $70 \pm 24 ; (\text{statistical}) \pm 17 ;(\text{systematic})$ nb, which agrees with the theorized values of $45 \pm 9$ nb  and $49 \pm 10$ nb within uncertainties.&lt;/p&gt;
+&lt;p&gt;To conclude, the measurement of light-by-light scattering by ATLAS is an exciting result which offers us a direct glimpse into the stark differences between classical and quantum physics in an accessible (and dare I say) amusing way!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -15,7 +15,7 @@ role: Associate Research Scholar / Dicke Fellow in Physics
 # Organizations/Affiliations
 organizations:
 - name: Princeton University
-  url: ""
+  url: "https://phy.princeton.edu"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I search for dark matter.
@@ -46,12 +46,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-#- icon: twitter
-#  icon_pack: fab
-#  link: https://twitter.com/GeorgeCushen
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=UQEnW38AAAAJ
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/andre-frankenthal-91008169
@@ -59,7 +56,7 @@ social:
   icon_pack: fab
   link: https://github.com/afrankenthal
 - icon: orcid
-  icon_pack: ai
+  icon_pack: fab
   link: https://orcid.org/0000-0002-2583-5982
 - icon: inspire
   icon_pack: ai

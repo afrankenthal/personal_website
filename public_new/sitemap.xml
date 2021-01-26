@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://frankenthal.dev/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/talk/example-talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/event/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/categories/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/lazy_photons_lhc/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/tag/paper-review/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/category/paper-review/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/tags/</loc>
+    <lastmod>2019-11-24T23:30:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/arduino/</loc>
+    <lastmod>2019-10-19T18:55:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/tag/outreach/</loc>
+    <lastmod>2019-10-19T18:55:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/</loc>
+    <lastmod>2019-10-19T18:55:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/particlebites/</loc>
+    <lastmod>2019-10-19T17:56:18-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/hepmap/</loc>
+    <lastmod>2019-10-19T17:56:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/cms/</loc>
+    <lastmod>2019-10-19T17:55:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/tag/experiment/</loc>
+    <lastmod>2019-10-19T17:55:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/project/padme/</loc>
+    <lastmod>2019-10-19T17:32:40-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/light-by-light/</loc>
+    <lastmod>2019-08-27T23:21:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/pyxrootd-bindings-in-macos/</loc>
+    <lastmod>2019-06-18T23:21:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/tag/technical-notes/</loc>
+    <lastmod>2019-06-18T23:21:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/category/technical-notes/</loc>
+    <lastmod>2019-06-18T23:21:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication-type/2/</loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/frankenthal-2018-yvf/</loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication_types/</loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/</loc>
+    <lastmod>2019-03-01T06:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication-type/1/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/frankenthal-2019-searching/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/tmux-on-lxplus/</loc>
+    <lastmod>2018-11-29T23:14:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/albicocco-2018-jal/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/tmux-on-lxplus_pt0/</loc>
+    <lastmod>2017-07-16T00:34:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/afs-kerberos-on-macos/</loc>
+    <lastmod>2017-07-11T00:05:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/post/ssh_kerberos_keytabs_macos/</loc>
+    <lastmod>2017-06-24T00:05:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/alonzi-2016-vos/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/fienberg-2015/</loc>
+    <lastmod>2015-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/grange-2015-fou/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://frankenthal.dev/publication/logashenko-2015-xab/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+  </url>
+  
+  <url>
+    <loc></loc>
+  </url>
+  
+</urlset>

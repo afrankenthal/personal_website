@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>experiment | Andre Frankenthal</title>
+    <link>https://frankenthal.dev/tag/experiment/</link>
+      <atom:link href="https://frankenthal.dev/tag/experiment/index.xml" rel="self" type="application/rss+xml" />
+    <description>experiment</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Oct 2019 17:55:50 -0400</lastBuildDate>
+    <image>
+      <url>https://frankenthal.dev/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>experiment</title>
+      <link>https://frankenthal.dev/tag/experiment/</link>
+    </image>
+    
+    <item>
+      <title>CMS Experiment</title>
+      <link>https://frankenthal.dev/project/cms/</link>
+      <pubDate>Sat, 19 Oct 2019 17:55:50 -0400</pubDate>
+      <guid>https://frankenthal.dev/project/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PADME Experiment</title>
+      <link>https://frankenthal.dev/project/padme/</link>
+      <pubDate>Sat, 19 Oct 2019 17:32:40 -0400</pubDate>
+      <guid>https://frankenthal.dev/project/padme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
