@@ -66,6 +66,9 @@ social:
 - icon: cv
   icon_pack: ai
   link: "files/CV_AndreFrankenthal.pdf"
+- icon: calendar-alt
+  icon_pack: fa
+  link: "https://asterenb.web.cern.ch/calendar.html"
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "afrankenthal@gmail.com"

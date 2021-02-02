@@ -34,3 +34,8 @@
   name = "CV"
   url = "files/CV_AndreFrankenthal.pdf"
   weight = 70
+
+[[main]]
+  name = "Calendar"
+  url = "https://asterenb.web.cern.ch/calendar.html"
+  weight = 80
