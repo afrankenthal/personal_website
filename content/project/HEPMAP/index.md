@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "HEPMAP"
+title: "HEPMAP (COMING SOON)"
 summary: "Information aggregrator for the different high-energy physics experiments around the world"
 authors: []
 tags: [outreach]
