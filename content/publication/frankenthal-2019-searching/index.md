@@ -5,7 +5,7 @@ publishDate: 2019-10-02T02:45:07.704570Z
 authors: ["A. Frankenthal"]
 publication_types: ["1"]
 abstract: ""
-featured: true
+featured: false
 url_pdf: https://arxiv.org/pdf/1910.00764.pdf
 publication: ""
 ---

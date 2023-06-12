@@ -22,8 +22,9 @@ bio: I search for dark matter.
 
 interests:
 - Dark Matter
+- Rare Physics Processes
+- Beyond Standard Model Physics
 - Computational Physics
-- High-Energy Physics
 - Hardware and Software Development
 
 education:
@@ -80,4 +81,4 @@ user_groups:
 - Visitors
 ---
 
-I am currently a [Dicke Fellow](https://phy.princeton.edu/dicke-fellows) at Princeton University's Physics department. Originally from Rio de Janeiro, Brazil, I hold a B.A. from Reed College, in Portland, OR, and a M.S. and Ph.D. from Cornell University, in Ithaca, NY. I work in two different experiments searching for dark matter using complementary strategies: with the larger [CMS Collaboration](https://cms.cern/collaboration) smashing protons together at the LHC, and with a smaller team at Laboratori Nazionali di Frascati, Italy, looking for dark photons ([PADME Collaboration](http://padme.lnf.infn.it/)). My work revolves around data analysis, detector data reconstruction, and upgrade studies for the next generation of high-energy physics detectors, in particular the CMS pixel detector. 
+I am currently a [Robert H. Dicke Fellow](https://phy.princeton.edu/dicke-fellows) at Princeton University's Physics department. Originally from Rio de Janeiro, Brazil, I hold a B.A. from Reed College, in Portland, OR, and a M.S. and Ph.D. from Cornell University, in Ithaca, NY. I work in two different experiments searching for dark matter using complementary strategies: with the larger [CMS Collaboration](https://cms.cern/collaboration) smashing protons together at the LHC, and with a smaller team at Laboratori Nazionali di Frascati, Italy, looking for dark photons ([PADME Collaboration](http://padme.lnf.infn.it/)). My work revolves around data analysis, detector data reconstruction, and upgrade studies for the next generation of high-energy physics detectors, in particular the CMS tracker detector. 
