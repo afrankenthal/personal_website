@@ -1,6 +1,9 @@
 # IDEs
 .idea/
 
+# Apple
+.DS_Store
+
 # Hugo
 /resources/
 public/
