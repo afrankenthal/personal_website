@@ -30,7 +30,7 @@ publishDate: '2023-08-26T05:29:15.243990Z'
 publication_types:
 - '2'
 abstract: ''
-publication: '*Phys. Rev. Lett. 131 (2023) 091903*'
+publication: '*Phys. Rev. Lett., 131 (2023) 091903*'
 doi: 10.1103/PhysRevLett.131.091903
 links:
 - name: arXiv

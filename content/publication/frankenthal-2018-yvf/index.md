@@ -11,5 +11,8 @@ featured: false
 publication: "*Nucl. Instrum. Meth. A, 919 (2019) 89*"
 url_pdf: https://arxiv.org/pdf/1809.10840.pdf
 doi: "10.1016/j.nima.2018.12.035"
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/1809.10840
 ---
 

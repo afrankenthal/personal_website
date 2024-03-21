@@ -8,8 +8,8 @@ summary: ''
 authors: [CMS Collaboration]
 tags: []
 categories: []
-date: '2023-05-22'
-lastmod: 2023-05-26T01:28:30-04:00
+date: '2024-01-26'
+lastmod: 2024-01-26T01:28:30-04:00
 featured: true
 draft: false
 
@@ -27,11 +27,12 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2023-05-26T05:28:30.637663Z'
+publishDate: '2024-1-26T05:28:30.637663Z'
 publication_types:
 - '2'
 abstract: ''
-publication: 'Under review in Phys. Rev. Lett.'
+doi: 10.1103/PhysRevLett.132.041802
+publication: '*Phys. Rev. Lett., 132 (2024) 041802*'
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2305.11649
